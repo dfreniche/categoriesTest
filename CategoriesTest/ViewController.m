@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "UIView+Utilities.h"
+#import "Categories/UIView+Utilities.h"
 
 @interface ViewController ()
 
@@ -16,12 +18,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    [self.view thisMethodIsGoingToClash];
+    [self.view anotherMethodInsideACategory];
+    [self.view thisMethodIsInsideACategory];
+    [self.view performSelector:@selector(thisMethodIsInsideACategory) withObject:nil];
 }
 
 @end

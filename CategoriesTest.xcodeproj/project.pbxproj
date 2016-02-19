@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		9983761B1C771B1100C933E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9983761A1C771B1100C933E4 /* main.m */; };
 		9983761E1C771B1100C933E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9983761D1C771B1100C933E4 /* AppDelegate.m */; };
-		998376211C771B1100C933E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998376201C771B1100C933E4 /* ViewController.m */; };
 		998376241C771B1100C933E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998376221C771B1100C933E4 /* Main.storyboard */; };
 		998376261C771B1100C933E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 998376251C771B1100C933E4 /* Assets.xcassets */; };
 		998376291C771B1100C933E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 998376271C771B1100C933E4 /* LaunchScreen.storyboard */; };
 		998376341C771B1100C933E4 /* CategoriesTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 998376331C771B1100C933E4 /* CategoriesTestTests.m */; };
+		998376411C771B3B00C933E4 /* UIView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 998376401C771B3B00C933E4 /* UIView+Utilities.m */; };
+		998376451C771B9400C933E4 /* UIView+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 998376441C771B9400C933E4 /* UIView+Utilities.m */; };
+		998376461C771D2900C933E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 998376201C771B1100C933E4 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		9983762F1C771B1100C933E4 /* CategoriesTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CategoriesTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		998376331C771B1100C933E4 /* CategoriesTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoriesTestTests.m; sourceTree = "<group>"; };
 		998376351C771B1100C933E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9983763F1C771B3B00C933E4 /* UIView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Utilities.h"; path = "Categories/UIView+Utilities.h"; sourceTree = "<group>"; };
+		998376401C771B3B00C933E4 /* UIView+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Utilities.m"; path = "Categories/UIView+Utilities.m"; sourceTree = "<group>"; };
+		998376431C771B9400C933E4 /* UIView+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Utilities.h"; path = "Categories2/UIView+Utilities.h"; sourceTree = "<group>"; };
+		998376441C771B9400C933E4 /* UIView+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Utilities.m"; path = "Categories2/UIView+Utilities.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		998376181C771B1100C933E4 /* CategoriesTest */ = {
 			isa = PBXGroup;
 			children = (
+				998376421C771B7C00C933E4 /* Categories2 */,
+				9983763E1C771B1C00C933E4 /* Categories */,
 				9983761C1C771B1100C933E4 /* AppDelegate.h */,
 				9983761D1C771B1100C933E4 /* AppDelegate.m */,
 				9983761F1C771B1100C933E4 /* ViewController.h */,
@@ -109,6 +117,24 @@
 				998376351C771B1100C933E4 /* Info.plist */,
 			);
 			path = CategoriesTestTests;
+			sourceTree = "<group>";
+		};
+		9983763E1C771B1C00C933E4 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9983763F1C771B3B00C933E4 /* UIView+Utilities.h */,
+				998376401C771B3B00C933E4 /* UIView+Utilities.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		998376421C771B7C00C933E4 /* Categories2 */ = {
+			isa = PBXGroup;
+			children = (
+				998376431C771B9400C933E4 /* UIView+Utilities.h */,
+				998376441C771B9400C933E4 /* UIView+Utilities.m */,
+			);
+			name = Categories2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,7 +237,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				998376211C771B1100C933E4 /* ViewController.m in Sources */,
+				998376411C771B3B00C933E4 /* UIView+Utilities.m in Sources */,
+				998376461C771D2900C933E4 /* ViewController.m in Sources */,
+				998376451C771B9400C933E4 /* UIView+Utilities.m in Sources */,
 				9983761E1C771B1100C933E4 /* AppDelegate.m in Sources */,
 				9983761B1C771B1100C933E4 /* main.m in Sources */,
 			);
